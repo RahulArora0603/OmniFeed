@@ -4,4 +4,4 @@ requests
 feedparser
 praw
 python-dotenv
-youtube-search-python
+youtube-search-python==1.6.6
