@@ -1,6 +1,6 @@
 fastapi
 uvicorn
-requests
+requests==2.31.0
 feedparser
 praw
 python-dotenv
