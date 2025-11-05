@@ -11,6 +11,7 @@ from .scrapers.medium_scraper import get_medium_posts
 from .scrapers.youtube_scraper import get_youtube_videos
 from .scrapers.news_scraper import get_latest_news
 from .scrapers.research_scraper import get_latest_papers
+from app.router import youtube_route
 
 app = FastAPI()
 
@@ -25,6 +26,8 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+app.include_router(youtube_route.router)
 
 @app.get("/")
 def home(request: Request):
