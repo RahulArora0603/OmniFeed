@@ -2,7 +2,6 @@ fastapi
 uvicorn
 requests
 feedparser
-urllib
 praw
 python-dotenv
 youtubesearchpython
