@@ -38,7 +38,28 @@
       font-size: 1.3rem;
       color: #b8d8ff;
     }
+    #searchInput::placeholder {
+      color: white;
+      opacity: 0.6;
+    }
 
+    /* For better browser compatibility */
+    #searchInput::-webkit-input-placeholder {
+      color: white;
+    }
+    #searchInput:-ms-input-placeholder {
+      color: white;
+    }
+    #searchInput::-ms-input-placeholder {
+      color: white;
+    }
+
+    /* Optional: add subtle glow when focused */
+    #searchInput:focus {
+      outline: none;
+      box-shadow: 0 0 10px #00d9ff;
+      border-color: #00d9ff;
+    }
     .navbar {
       background: linear-gradient(90deg, #091229, #0b1c3a);
       border-bottom: 2px solid #00d9ff;
@@ -216,7 +237,7 @@
   <!-- SEARCH BAR -->
   <div class="container my-4">
     <div class="input-group">
-      <input type="text" id="searchInput" class="form-control" placeholder="Enter topic (e.g., AI, Machine Learning, Robotics)">
+      <input type="text" id="searchInput" class="form-control" placeholder="Enter any topic to search (e.g., AI, Machine Learning, Robotics)">
       <button class="btn btn-primary" onclick="searchNews()">Search</button>
     </div>
   </div>
