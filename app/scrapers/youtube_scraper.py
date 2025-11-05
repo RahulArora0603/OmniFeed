@@ -3,7 +3,7 @@ from youtubesearchpython import VideosSearch
 
 # Function to get YouTube videos based on a query (default "artificial intelligence")
 def get_youtube_videos(query = "artificial intelligence"):
-    videos_search = VideosSearch(query, limit=5)
+    videos_search = VideosSearch(query, limit=10)
     results = videos_search.result()["result"]
 
     video_list = []

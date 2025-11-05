@@ -10,7 +10,7 @@ def get_latest_news(query="artificial intelligence"):
         f"https://newsapi.org/v2/everything?"
         f"q={query}&"
         f"sortBy=publishedAt&"
-        f"pageSize=5&"
+        f"pageSize=10&"
         f"page={page}&"
         f"apiKey={api_key}"
     )

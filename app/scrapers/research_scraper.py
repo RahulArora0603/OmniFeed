@@ -3,7 +3,7 @@ import requests
 
 # Function to get latest research papers based on a query (default "artificial intelligence")
 def get_latest_papers(query):
-    url = f"http://export.arxiv.org/api/query?search_query=all:{query}&start=0&max_results=5"
+    url = f"http://export.arxiv.org/api/query?search_query=all:{query}&start=0&max_results=10"
     response = requests.get(url)
     entries = response.text.split("<entry>")[1:]
 

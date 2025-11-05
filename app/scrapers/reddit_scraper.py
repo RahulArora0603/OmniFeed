@@ -13,7 +13,7 @@ def get_reddit_posts(query="artificial intelligence"):
     )
     # Search for posts in all subreddits matching the query, sorted by relevance, limited to 5 results
     posts = []
-    for submission in reddit.subreddit('all').search(query, sort="relevance", limit=5):
+    for submission in reddit.subreddit('all').search(query, sort="relevance", limit=10):
         posts.append({
             "title": submission.title,
             "url": submission.url,
