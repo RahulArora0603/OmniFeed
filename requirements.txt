@@ -4,5 +4,5 @@ requests
 feedparser
 praw
 python-dotenv
-youtubesearchpython
+youtube-search-python
 os
