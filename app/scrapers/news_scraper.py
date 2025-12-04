@@ -24,6 +24,7 @@ def get_latest_news(query="artificial intelligence"):
         news_list = []
         for article in articles:
             news_list.append({
+                "name": "NewsAPI",
                 "title": article["title"],
                 "url": article["url"],
                 "image": article["urlToImage"]

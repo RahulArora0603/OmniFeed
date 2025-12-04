@@ -16,7 +16,7 @@ def get_latest_papers(query):
             link_end = entry.find("</id>")
             title = entry[title_start:title_end].strip().replace("\n", " ")
             link = entry[link_start:link_end]
-            papers.append({"title": title, "url": link})
+            papers.append({"name": "Research","title": title, "url": link})
 
         return papers # return a list of dictionaries containing title and url for each paper
     except Exception as e:

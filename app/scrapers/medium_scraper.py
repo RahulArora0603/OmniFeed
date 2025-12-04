@@ -9,6 +9,7 @@ def get_medium_posts(query="artificial intelligence",limit=10):
         feed = feedparser.parse(feed_url)
         posts = [
             {
+                "name": "Medium",
                 "title": entry.title,
                 "url": entry.link
             }

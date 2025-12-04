@@ -10,6 +10,7 @@ def get_youtube_videos(query = "artificial intelligence"):
         video_list = []
         for video in results:
             video_list.append({
+                "name": "YouTube",
                 "title": video["title"],
                 "url": video["link"],
                 "image": video["thumbnails"][0]["url"]

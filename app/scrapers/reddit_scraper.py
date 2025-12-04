@@ -16,6 +16,7 @@ def get_reddit_posts(query="artificial intelligence"):
         posts = []
         for submission in reddit.subreddit('all').search(query, sort="relevance", limit=10):
             posts.append({
+                "name": "Reddit",
                 "title": submission.title,
                 "url": submission.url,
                 "image": submission.thumbnail if submission.thumbnail and submission.thumbnail.startswith("http") else None,

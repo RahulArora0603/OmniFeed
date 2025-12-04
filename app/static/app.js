@@ -22,7 +22,7 @@ function loadContent(type, topic= current_topic) {
             content.innerHTML = '<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"></div>';
             const row = content.querySelector('.row');
             
-            const placeholder = "/static/images/pngtree-science-and-technology-future-high-tech-light-background-sci-fi-picture-image_2247992.jpg";
+            //const placeholder = "/static/images/pngtree-science-and-technology-future-high-tech-light-background-sci-fi-picture-image_2247992.jpg";
             console.log("Fetched data:", data);
 
             data.forEach(item => {
@@ -61,8 +61,23 @@ function loadContent(type, topic= current_topic) {
                 else if (type === "twitter") {
                     div.innerHTML = `<p>${item.text}</p>`;
                 }
-
                 content.appendChild(div);*/
+                let placeholder;
+                if (item.name==="Reddit"){
+                    placeholder = "/static/images/Reddit-Logo.jpg"
+                }
+                else if (item.name==="NewsAPI"){
+                    placeholder = "/static/images/pngtree-global-news-glyph-icon-news-network-logo-vector-png-image_41818854.jpg"
+                }
+                else if (item.name==="YouTube"){
+                    placeholder = "/static/images/YouTube-Logo.png"
+                }
+                else if (item.name==="Research"){
+                    placeholder = "/static/images/291-2918679_research-paper-logo-png-transparent-png.png"
+                }
+                else {
+                    placeholder = "/static/images/Medium-Logo.jpg"
+                }
                 let imageUrl = item.image;
                 // const placeholder = ""; // Update path if needed
                 if (!imageUrl || imageUrl === "null" || imageUrl === null) {
