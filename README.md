@@ -17,8 +17,8 @@ Built using **FastAPI**, **Bootstrap**, **JavaScript**, and API integrations, Om
 ✅ Clean & responsive **Bootstrap UI**
 ✅ User authentication & saved posts
 ✅ Fully API-driven backend with **FastAPI**
-✅ Pagination / Infinite scroll support
-✅ Production-ready web architecture
+✅ Card based Content
+✅ Production-ready web architecture (maybe)
 
 ---
 
