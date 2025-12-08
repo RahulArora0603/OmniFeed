@@ -4,6 +4,7 @@ OmniFeed is a powerful **multi-source content aggregator web app** that allows u
 
 Built using **FastAPI**, **Bootstrap**, **JavaScript**, and API integrations, OmniFeed solves the problem of scattered information by providing a **single unified feed**.
 
+![HomePage](Screenshot 2025-12-04 231753.png)
 ---
 
 ## 🌟 Features
