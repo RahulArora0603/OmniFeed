@@ -24,7 +24,7 @@ Built using **FastAPI**, **Bootstrap**, **JavaScript**, and API integrations, Om
 
 ## 🛠️ Tech Stack
 
-### 🔹 Backend
+### 🔹 Backend (Python🐍)
 
 * **FastAPI** – high-performance Python backend
 * **PRAW** – Reddit API wrapper
